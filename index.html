@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtouch Cooling Systems Ltd | Global Thermal Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+          scroll-behavior: smooth;
+        }
+        body { 
+          font-family: 'Plus Jakarta Sans', sans-serif;
+          background-color: #ffffff;
+          overflow-x: hidden;
+        }
+        
+        .frost-glass { 
+          background: rgba(255, 255, 255, 0.75); 
+          backdrop-filter: blur(20px) saturate(180%); 
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-gradient { 
+          background: linear-gradient(135deg, #020617 0%, #0c4a6e 50%, #083344 100%); 
+        }
+
+        .ice-card {
+          background: white;
+          transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .ice-card:hover {
+          transform: translateY(-12px);
+          box-shadow: 0 40px 80px -20px rgba(6, 182, 212, 0.12);
+        }
+
+        @keyframes drift {
+          from { transform: translateX(-5%) translateY(0); opacity: 0; }
+          to { transform: translateX(5%) translateY(-30px); opacity: 0.15; }
+        }
+
+        .mist-layer {
+          position: absolute;
+          width: 300%;
+          height: 100%;
+          background: radial-gradient(circle, rgba(34, 211, 238, 0.2) 0%, transparent 70%);
+          animation: drift 15s infinite alternate ease-in-out;
+          pointer-events: none;
+        }
+
+        .glow-text {
+          text-shadow: 0 0 30px rgba(34, 211, 238, 0.4);
+        }
+
+        .animate-fade-in {
+          animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .animate-slide-up {
+          animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+          from { opacity: 0; transform: translateY(40px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f8fafc; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 3px solid #f8fafc; }
+        ::-webkit-scrollbar-thumb:hover { background: #06b6d4; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+<body class="text-slate-900">
+    <div id="root"></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Airtouch Cooling Systems Portal",
+  "description": "A high-end HVAC-R platform for Airtouch Cooling Systems Ltd featuring interactive ROI calculators, AI-driven diagnostics, and a comprehensive service portal.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
